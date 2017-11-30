@@ -120,6 +120,13 @@ video{
 
 }
 
+/*styling for the footer*/
+footer{
+  height: 100px;
+  text-align: center;
+  border: 1px solid red;
+}
+
 
 /*STYLING FOR TABLETS*/
 @media only screen and (min-width: 830px){
