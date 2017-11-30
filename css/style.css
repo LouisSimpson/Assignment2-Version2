@@ -1,0 +1,132 @@
+/*import google fonts*/
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+/*STYLING FOR MOBILE PHONES*/
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body{
+  background: #e9e9e9;
+}
+
+/*main header*/
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+header a{
+  text-decoration: none;
+}
+
+/*Navigation*/
+nav{
+  display: none;
+}
+
+nav ul{
+  list-style-type: none;
+}
+
+nav ul a{
+  text-decoration: none;
+  color: #fff;
+}
+
+nav ul a:visited{
+  color: #fff;
+}
+
+nav ul a li{
+  padding-bottom: 15px;
+  padding-top: 5px;
+}
+
+#nav-menu{
+  width: auto;
+  text-align: left;
+  font-weight: 600;
+  position: absolute;
+  color: #fff;
+  top: 110px;
+  right: 15px;
+}
+
+#motogpimg{
+  height: 70px;
+  width: auto;
+}
+
+#menu{
+  display: block;
+}
+
+.show-menu{
+  display: block;
+}
+
+/*banner*/
+.banner{
+  height: 200px;
+  background-image: url("../img/motobanner.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+/*styling for main section on index page*/
+main h2{
+  padding-top: 10px;
+  text-align: center;
+}
+
+.main-section{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.main-section article{
+  height: 150px;
+  width: 45%;
+  border: 1px solid red;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+
+
+/*styling for video section*/
+.vid{
+  height: 200px;
+  text-align: center;
+}
+
+video{
+  max-width: 100%;
+  max-height: 100%;
+  height: 200px;
+  width: auto;
+  object-fit: cover;
+
+}
+
+
+/*STYLING FOR TABLETS*/
+@media only screen and (min-width: 830px){
+
+}
+
+/*STYLING FOR DESKTOP*/
+@media only screen and (min-width: 1260px){
+
+}
