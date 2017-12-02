@@ -43,6 +43,10 @@ nav ul a:visited{
   color: #fff;
 }
 
+nav ul a:hover{
+  font-style: italic;
+}
+
 nav ul a li{
   padding-bottom: 15px;
   padding-top: 5px;
@@ -81,8 +85,9 @@ nav ul a li{
 }
 
 /*styling for main section on index page*/
-main h2{
+.fly-in-title{
   padding-top: 10px;
+  width: 100%;
   text-align: center;
 }
 
@@ -96,20 +101,18 @@ main h2{
 }
 
 /*styling for the figuires and transition on index page*/
-
-
 .main-section figure{
   height: 150px;
-  width: 45%;
+  width: 48%;
   padding-top: 10px;
-  padding-bottom: 10px;
   overflow: hidden;
 }
 
 .main-section figure img{
-  height: 150px;
+  height: 130px;
   width: auto;
-  margin-bottom: -3em;
+  margin-bottom: -3.25em;
+  border-radius: 5px;
 }
 
 .main-section figcaption {
@@ -136,6 +139,8 @@ main h2{
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: #373737;
+  color: white;
+  text-align: center;
 }
 
 /*styling for video section*/
