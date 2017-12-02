@@ -96,10 +96,11 @@ main h2{
 }
 
 /*styling for the figuires and transition on index page*/
+
+
 .main-section figure{
   height: 150px;
   width: 45%;
-  border: 1px solid red;
   padding-top: 10px;
   padding-bottom: 10px;
   overflow: hidden;
@@ -130,7 +131,6 @@ main h2{
 }
 
 .main-section article{
-  border: 1px solid red;
   height: 150px;
   width: 45%;
   padding-top: 10px;
@@ -186,10 +186,15 @@ footer{
 .footnav h4{
   padding-top: 5px;
   padding-bottom: 5px;
+  font-size: 1.1em;
 }
 
 .footnav li{
   padding-bottom: 3px;
+}
+
+.footnav li:hover{
+  color: grey;
 }
 
 
