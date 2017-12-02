@@ -155,7 +155,7 @@ video{
 
 /*styling for the footer*/
 footer{
-  height: 170px;
+  height: 200px;
   text-align: center;
   background-color: #373737;
   color: #fff;
@@ -184,17 +184,36 @@ footer{
 }
 
 .footnav h4{
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-size: 1.1em;
 }
 
 .footnav li{
-  padding-bottom: 3px;
+  padding-bottom: 5px;
 }
 
 .footnav li:hover{
   color: grey;
+}
+
+/*back to top button*/
+.back-to-top {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: block;
+  height: 50px;
+  width: 50px;
+}
+
+.back-to-top img{
+  height: 40px;
+  width: 40px;
+}
+
+.back-to-top:hover {
+  cursor: pointer;
 }
 
 
