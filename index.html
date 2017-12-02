@@ -5,8 +5,10 @@
 	<meta charset="utf-8">
 	<!--set the meta tag for control of the viewport-->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--favicon-->
+	<link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
 	<!--This is where my title goes-->
-	<title>Moto|GP</title>
+	<title>MotoGP</title>
 	<!--Link for the stylesheet-->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
@@ -21,7 +23,7 @@
 			    <li>GALLERY</li>
 			  </a>
 			  <a href="#">
-			    <li>CALENDER</li>
+			    <li>CALENDAR</li>
 			  </a>
 			  <a href="#">
 			    <li>RIDERS</li>
@@ -41,19 +43,26 @@
 	<main>
     <h2>Welcome to the home of Motogp</h2>
     <section class="main-section">
-      <article>
+			<figure>
+				<img src="img/marquez.jpg" alt"marquez"/>
+				<figcaption>
+				 Marquez retains the 2017 MotoGP trophy
+				</figcaption>
+			</figure>
+			<article>
 
-      </article>
-      <article>
+			</article>
+			<article>
 
-      </article>
-      <article>
-
-      </article>
-      <article>
-
-      </article>
+			</article>
+			<figure>
+				<img src="img/motorecap.jpg" alt"seasonrecap"/>
+				<figcaption>
+				2017 full season recap
+				</figcaption>
+			</figure>
     </section>
+
     <section class="vid">
       <video controls muted autoplay playsinline loop>
         <source src="vids/motogpvid.mp4" type="video/mp4">
@@ -65,7 +74,21 @@
 	<script src="js/navscript.js"></script>
 	<!--footer starts here-->
 	<footer>
-		<small>Copyright@</small>
+		<div class="socialmedia">
+			<img src="img/instagram.svg" />
+			<img src="img/facebook.svg" />
+			<img src="img/twitter.svg" />
+		</div>
+		<nav class="footnav">
+			<h4>Site map</h4>
+			<ul>
+				<a href="#"><li>Gallery</li></a>
+				<a href="#"><li>Calendar</li></a>
+				<a href="#"><li>Riders</li></a>
+				<a href="#"><li>Teams</li></a>
+				<a href="#"><li>Circuits</li></a>
+			</ul>
+		</nav>
 	</footer>
 </body>
 </html>

@@ -61,6 +61,7 @@ nav ul a li{
 #motogpimg{
   height: 70px;
   width: auto;
+  padding-top: 5px;
 }
 
 #menu{
@@ -94,21 +95,54 @@ main h2{
   margin-bottom: 10px;
 }
 
-.main-section article{
+/*styling for the figuires and transition on index page*/
+.main-section figure{
   height: 150px;
   width: 45%;
   border: 1px solid red;
   padding-top: 10px;
   padding-bottom: 10px;
+  overflow: hidden;
 }
 
+.main-section figure img{
+  height: 150px;
+  width: auto;
+  margin-bottom: -3em;
+}
 
+.main-section figcaption {
+  box-sizing: border-box;
+  height: 3em;
+  line-height: 1.2em;
+  transform: translateY(4em);
+  background: #fff;
+  text-align: center;
+  /* background: rgba( 255, 255, 255, 0 ); */
+  opacity: 0;
+  transition: all .5s;
+}
 
+.main-section figure:hover figcaption {
+  transform: translateY(0em);
+  /* background: rgba( 255, 255, 255, .78 ); */
+  opacity: .78;
+}
+
+.main-section article{
+  border: 1px solid red;
+  height: 150px;
+  width: 45%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #373737;
+}
 
 /*styling for video section*/
 .vid{
   height: 200px;
   text-align: center;
+  padding-bottom: 20px;
 }
 
 video{
@@ -117,14 +151,45 @@ video{
   height: 200px;
   width: auto;
   object-fit: cover;
-
 }
 
 /*styling for the footer*/
 footer{
-  height: 100px;
+  height: 170px;
   text-align: center;
-  border: 1px solid red;
+  background-color: #373737;
+  color: #fff;
+}
+
+.socialmedia{
+  float: right;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.socialmedia img{
+  display: flex;
+  height: 42px;
+  width: auto;
+}
+
+.footnav{
+  display: block;
+  width: 50%;
+  text-align: left;
+  margin-left: 8%;
+}
+
+.footnav h4{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.footnav li{
+  padding-bottom: 3px;
 }
 
 
