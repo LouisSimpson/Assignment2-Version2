@@ -84,13 +84,23 @@ nav ul a li{
   background-size: cover;
 }
 
-/*styling for main section on index page*/
+/*animation for the fly in title*/
 .fly-in-title{
   padding-top: 10px;
   width: 100%;
   text-align: center;
+  position: relative;
+  -webkit-animation: mymove 3s; /* Safari 4.0 - 8.0 */
+  animation: mymove 3s;
+  animation-iteration-count: 1;
 }
 
+@keyframes mymove {
+    from {left: -300px;}
+    to {left: 0px;}
+}
+
+/*styling for main section on index page*/
 .main-section{
   width: 100%;
   display: flex;
