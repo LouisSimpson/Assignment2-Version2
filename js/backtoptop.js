@@ -1,9 +1,9 @@
-var $backToTop = $(".back-to-top");
+let $backToTop = $(".back-to-top");
 $backToTop.hide();
 
 
 $(window).on('scroll', function() {
-  if ($(this).scrollTop() > 100) {
+  if ($(this).scrollTop() > 200) {
     $backToTop.fadeIn();
   } else {
     $backToTop.fadeOut();
