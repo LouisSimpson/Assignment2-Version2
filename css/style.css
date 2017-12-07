@@ -153,6 +153,16 @@ nav ul a li{
   text-align: center;
 }
 
+/*styling for the twitter section*/
+.twitter{
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+
+
 /*styling for video section*/
 .vid{
   height: 200px;

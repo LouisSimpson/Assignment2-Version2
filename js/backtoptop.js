@@ -3,7 +3,7 @@ $backToTop.hide();
 
 
 $(window).on('scroll', function() {
-  if ($(this).scrollTop() > 200) {
+  if ($(this).scrollTop() > 400) {
     $backToTop.fadeIn();
   } else {
     $backToTop.fadeOut();
