@@ -78,10 +78,49 @@ nav ul a li{
 
 /*banner*/
 .banner{
-  height: 200px;
+  height: 220px;
   background-image: url("../img/motobanner.jpg");
   background-position: center;
   background-size: cover;
+}
+
+
+
+/*styling for the gallery slideshow*/
+.slides{
+  height: 200px;
+  width: auto;
+}
+
+/*styling for article box on gallery page*/
+.slide-show{
+  width: 100%;
+}
+
+.text-box{
+  margin-top: 10px;
+  margin-bottom: 50px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background: white;
+  width: 70%;;
+  padding: 20px;
+  position: relative;
+}
+
+.text-box::after {
+  content: "";
+  height: 20px;
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/rip.svg") bottom left;
+  /* background-size: 100%; */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+}
+
+.text-box p{
+	color: black;
 }
 
 /*animation for the fly in title*/
@@ -93,6 +132,12 @@ nav ul a li{
   -webkit-animation: mymove 3s; /* Safari 4.0 - 8.0 */
   animation: mymove 3s;
   animation-iteration-count: 1;
+}
+
+.fly-in-title h1{
+  color: black;
+  text-shadow: black;
+  font-weight: 800;
 }
 
 @keyframes mymove {
@@ -220,6 +265,57 @@ footer{
 
 .footnav li:hover{
   color: grey;
+}
+
+/*styling for the animation on riders page*/
+
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 500px;
+  padding-top: 20px;
+}
+
+/* flip the pane when hovered */
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+	transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+	width: 200px;
+	height: 200px;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+  height: 200px;
+  border: 1px solid red;
+}
+
+.front img{
+  height: 200px;
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
 }
 
 /*back to top button*/
