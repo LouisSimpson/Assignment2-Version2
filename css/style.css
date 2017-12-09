@@ -52,6 +52,15 @@ nav ul a li{
   padding-top: 15px;
 }
 
+#close{
+  height: 20px;
+  width: auto;
+  position: relative;
+  text-align: right;
+  float: left;
+  top: 0;
+}
+
 #nav-menu{
   width: auto;
   text-align: center;
@@ -64,7 +73,7 @@ nav ul a li{
   z-index: 99;
   opacity: 0.9;
   width: 40%;
-  height: 3000px;
+  height: 700px;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
