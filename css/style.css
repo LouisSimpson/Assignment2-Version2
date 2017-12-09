@@ -58,7 +58,13 @@ nav ul a li{
   position: relative;
   text-align: right;
   float: left;
+  clear: both;
   top: 0;
+}
+
+#close img{
+  height: 20px;
+  width: auto;
 }
 
 #nav-menu{
