@@ -53,11 +53,11 @@ nav ul a li{
 }
 
 #close{
-  height: 20px;
-  width: auto;
+  width: 20px;
   position: relative;
   text-align: right;
   float: left;
+  clear: both;
   top: 0;
 }
 
