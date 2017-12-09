@@ -49,17 +49,46 @@ nav ul a:hover{
 
 nav ul a li{
   padding-bottom: 15px;
-  padding-top: 5px;
+  padding-top: 15px;
 }
 
 #nav-menu{
   width: auto;
-  text-align: left;
+  text-align: center;
   font-weight: 600;
   position: absolute;
   color: #fff;
-  top: 110px;
-  right: 15px;
+  top: 0;
+  right: 0;
+  background-color: black;
+  z-index: 99;
+  opacity: 0.9;
+  width: 40%;
+  height: 3000px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+#nav-menu h3{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.page-nav li{
+  border-top: 1px solid #fff;
+}
+
+.page-nav{
+  border-bottom: 1px solid #fff;
+}
+
+.social-nav{
+  padding-top: 20px;
+}
+
+.social-nav img{
+  height: 40px;
+  width: auto;
 }
 
 #motogpimg{
