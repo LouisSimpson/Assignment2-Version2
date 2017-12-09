@@ -79,9 +79,11 @@ nav ul a li{
 /*banner*/
 .banner{
   height: 220px;
+  width: auto;
   background-image: url("../img/motobanner.jpg");
   background-position: center;
   background-size: cover;
+  border-top: 1px solid black;
 }
 
 
@@ -124,7 +126,7 @@ nav ul a li{
 }
 
 /*animation for the fly in title*/
-.fly-in-title{
+#title-tablet{
   padding-top: 10px;
   width: 100%;
   text-align: center;
@@ -134,10 +136,11 @@ nav ul a li{
   animation-iteration-count: 1;
 }
 
-.fly-in-title h1{
-  color: black;
-  text-shadow: black;
+#title-tablet h1{
+  color: #fff;
+  text-shadow: 2px 2px 4px black;
   font-weight: 800;
+  margin-top: 50px;
 }
 
 @keyframes mymove {
@@ -159,12 +162,12 @@ nav ul a li{
 .main-section figure{
   height: 150px;
   width: 48%;
-  padding-top: 10px;
   overflow: hidden;
+  border: 1px solid red;
 }
 
 .main-section figure img{
-  height: 130px;
+  height: 150px;
   width: auto;
   margin-bottom: -3.25em;
   border-radius: 5px;
@@ -338,9 +341,43 @@ footer{
 }
 
 
-/*STYLING FOR TABLETS*/
-@media only screen and (min-width: 830px){
 
+/*STYLING FOR TABLETS*/
+@media only screen and (min-width: 620px){
+  .main-section figure{
+    display: none;
+  }
+
+  .main-section{
+    border: 1px solid red;
+    width: 90%;
+    margin-left: 5%;
+    height: 300px;
+  }
+
+  .banner{
+    background-position: top;
+    height: 350px;
+  }
+
+  .fly-in-title{
+    display: none;
+  }
+
+  #title-tablet{
+    display: block;
+    border: 1px solid red;
+    text-align: center;
+    width: 60%;
+    margin-left: 20%;
+  }
+
+  #title-tablet h1{
+    color: #fff;
+    margin-top: 100px;
+    font-size: 3em;
+    text-shadow: 2px 2px 4px #000000;
+  }
 }
 
 /*STYLING FOR DESKTOP*/
