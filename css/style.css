@@ -53,8 +53,7 @@ nav ul a li{
 }
 
 #close{
-  height: 20px;
-  width: auto;
+  width: 20px;
   position: relative;
   text-align: right;
   float: left;
@@ -62,10 +61,7 @@ nav ul a li{
   top: 0;
 }
 
-#close img{
-  height: 20px;
-  width: auto;
-}
+
 
 #nav-menu{
   width: auto;
