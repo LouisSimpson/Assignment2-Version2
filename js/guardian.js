@@ -7,7 +7,7 @@
   let demoJSON = document.getElementById("results");
 
   // get an api key from http://open-platform.theguardian.com/access/
-  let baseURL = "https://content.guardianapis.com/search?api-key=317c6d50-efc8-4a5d-a28d-ce37f5f37e87&q=motogp&show-fields=thumbnail&page-size=5";
+  let baseURL = "https://content.guardianapis.com/search?api-key=317c6d50-efc8-4a5d-a28d-ce37f5f37e87&q=motoGP&show-fields=thumbnail&page-size=3";
 
   searchForm.addEventListener("submit", function(ev){
     let url = baseURL + queryBox.value;
@@ -29,7 +29,7 @@
         img = `<img src="${tmp.thumbnail.source}" alt="${tmp.title}">`;
       }
         for (key in tmp) {
-          theData += `<li><a href="${tmp[key].webUrl}"><h3>${tmp[key].webTitle}</h3></a>${tmp[key].webPublicationDate} <img src="${tmp[key].fields.thumbnail}"/></li>`;
+          theData += `<li><a href="${tmp[key].webUrl}"><h3>${tmp[key].webTitle}</h3></a><img src="${tmp[key].fields.thumbnail}"/></li>`;
         }
         demoJSON.innerHTML = theData;
       });
