@@ -247,29 +247,31 @@ nav ul a li{
   padding-bottom: 20px;
 }
 
-
+/*hide the tablet and larger section*/
+.two-col{
+  display: none;
+}
 
 /*styling for video section*/
 .vid{
-  height: 200px;
-  text-align: center;
-
+  height: 300px;
+  background: black;
+  border-bottom: 5px solid black;
 }
 
-video{
-  max-width: 100%;
-  max-height: 100%;
-  height: 200px;
+.vid video{
+  height: 300px;
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 /*styling for the footer*/
 footer{
-  height: 150px;
+  height: auto;
   text-align: center;
   background-color: black;
   color: #fff;
+  height: 150px;
 }
 
 .socialmedia{
@@ -280,6 +282,8 @@ footer{
   justify-content: space-around;
   align-items: flex-end;
   padding-right: 10px;
+  padding-top: 10px;
+  transition: ease-in 0.5s;
 }
 
 .socialmedia img{
@@ -296,12 +300,6 @@ footer{
   margin-left: 8%;
 }
 
-.footnav h4{
-  padding-top: 5px;
-  padding-bottom: 5px;
-  font-size: 1.1em;
-}
-
 .footnav li{
   padding-bottom: 1px;
   padding-top: 1px;
@@ -310,6 +308,11 @@ footer{
 .footnav li:hover{
   color: grey;
 }
+
+.footnav h4{
+  padding-bottom: 10px;
+}
+
 
 /*styling for the animation on riders page*/
 
@@ -385,14 +388,20 @@ footer{
 
 /*STYLING FOR TABLETS*/
 @media only screen and (min-width: 620px){
+
+  /*index page*/
   .main-section figure{
     display: none;
   }
 
+  .fly-in-title{
+    display: none;
+  }
+
   .main-section{
+    margin-top: 0;
     border: 1px solid red;
-    width: 90%;
-    margin-left: 5%;
+    width: 100%;
     height: 300px;
   }
 
@@ -401,13 +410,9 @@ footer{
     height: 350px;
   }
 
-  .fly-in-title{
-    display: none;
-  }
-
+  /*resize and reposition title for tablet view*/
   #title-tablet{
     display: block;
-    border: 1px solid red;
     text-align: center;
     width: 60%;
     margin-left: 20%;
@@ -419,9 +424,75 @@ footer{
     font-size: 3em;
     text-shadow: 2px 2px 4px #000000;
   }
+
+
+  /*middle section with 2 columns*/
+  .two-col{
+    display: flex;
+    justify-content: space-between;
+    height: 400px;
+    width: 100%;
+    border: 1px solid red;
+    padding-bottom: 10px;
+    z-index: 1;
+  }
+  /*opacity applies to the container and all content so have to use pseudo before*/
+  .two-col:before{
+    content: "";
+    z-index: -1;
+    position: absolute;
+    height: 400px;
+    width: 100%;
+    background-image: url("../img/bike2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: .4;
+  }
+
+  .left-content{
+    text-align: center;
+    display: inline-block;
+    height: 400px;
+    width: 50%;
+    border: 1px solid red;
+  }
+
+  .right-content{
+    display: inline-block;
+    height: 400px;
+    width: 50%;
+    border: 1px solid red;
+  }
+
+  /*hide this class which is styled for mobile view only*/
+  .twitter{
+    display: none;
+    border: 1px solid red;
+  }
+
+  /*make the video responsive for tablet view*/
+  .vid{
+    height: 600px;
+    border-bottom: 0;
+  }
+
+  .vid video{
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .footer{
+    height: 300px;
+  }
+
 }
 
-/*STYLING FOR DESKTOP*/
-@media only screen and (min-width: 1260px){
+/*STYLING FOR LARGER TABLETS*/
+@media only screen and (min-width: 620px){
+
+/*STYLING FOR DESKTOPS & LAPTOPS*/
+@media only screen and (min-width: 1024px){
 
 }
