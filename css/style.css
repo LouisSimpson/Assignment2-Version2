@@ -85,6 +85,8 @@ nav ul a li{
 
 .page-nav li{
   border-top: 1px solid #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .page-nav{
@@ -132,6 +134,16 @@ nav ul a li{
   width: auto;
 }
 
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@keyframes fade{
+  from {opacity: 0.4}
+  to {opacity: 1}
+}
+
 /*styling for article box on gallery page*/
 .slide-show{
   width: 100%;
@@ -156,6 +168,7 @@ nav ul a li{
   top: 100%;
   left: 0;
   width: 100%;
+  margin-top: -5px;
 }
 
 .text-box p{
