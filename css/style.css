@@ -102,6 +102,10 @@ nav ul a li{
   width: auto;
 }
 
+.social-nav li{
+  padding-bottom: 10px;
+}
+
 #motogpimg{
   height: 70px;
   width: auto;
