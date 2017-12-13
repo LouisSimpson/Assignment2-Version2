@@ -288,6 +288,7 @@ footer{
   background-color: black;
   color: #fff;
   height: 150px;
+  padding-top: 10px;
 }
 
 .socialmedia{
@@ -331,17 +332,36 @@ footer{
 
 
 /*styling for the animation on riders page*/
+#riderstitle{
+  text-align: center;
+  height: 50px;
+  padding-top: 15px;
+}
+
 .rider-container{
-  border: 1px solid red;
-  height: 1000px;
+  height: 500px;
   width: 100%;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.rider-container:before{
+  content: "";
+  z-index: -1;
+  position: absolute;
+  height: 500px;
+  width: 100%;
+  background-image: url("../img/bike5.jpg");
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: .4;
 }
 /* entire container, keeps perspective */
 .flip-container {
-	perspective: 1000px;
   padding-top: 20px;
+	perspective: 1000px;
 }
 
 /* flip the pane when hovered */
@@ -350,8 +370,8 @@ footer{
 }
 
 .flip-container, .front, .back {
-	width: 150px;
-	height: 150px;
+	width: 136px;
+	height: 120px;
 }
 
 /* flip speed goes here */
@@ -374,18 +394,33 @@ footer{
 	z-index: 2;
 	/* for firefox 31 */
 	transform: rotateY(0deg);
-  height: 150px;
-  border: 1px solid red;
+  height: 120px;
 }
 
 .front img{
-  height: 150px;
-  width: 150px;
+  height: 120px;
+  width: auto;
 }
 
 /* back, initially hidden pane */
 .back {
 	transform: rotateY(180deg);
+  border-bottom: 1px dashed black;
+}
+
+.back p{
+  width: 100%;
+  font-weight: bold;
+}
+
+.back img{
+  height: 30px;
+  width: auto;
+}
+
+.back h4{
+  color: #fff;
+  text-shadow: 2px 2px 4px black;
 }
 
 
