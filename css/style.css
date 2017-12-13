@@ -331,10 +331,16 @@ footer{
 
 
 /*styling for the animation on riders page*/
-
+.rider-container{
+  border: 1px solid red;
+  height: 1000px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
 /* entire container, keeps perspective */
 .flip-container {
-	perspective: 500px;
+	perspective: 1000px;
   padding-top: 20px;
 }
 
@@ -344,8 +350,8 @@ footer{
 }
 
 .flip-container, .front, .back {
-	width: 200px;
-	height: 200px;
+	width: 150px;
+	height: 150px;
 }
 
 /* flip speed goes here */
@@ -368,18 +374,21 @@ footer{
 	z-index: 2;
 	/* for firefox 31 */
 	transform: rotateY(0deg);
-  height: 200px;
+  height: 150px;
   border: 1px solid red;
 }
 
 .front img{
-  height: 200px;
+  height: 150px;
+  width: 150px;
 }
 
 /* back, initially hidden pane */
 .back {
 	transform: rotateY(180deg);
 }
+
+
 
 /*back to top button*/
 .back-to-top {
