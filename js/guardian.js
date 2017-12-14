@@ -2,16 +2,17 @@
 
 (function(){
 
-  let queryBox = document.getElementById("guardQuery");
-  let searchForm = document.getElementById("searchForm");
+  // let queryBox = document.getElementById("guardQuery");
+  // let searchForm = document.getElementById("searchForm");
   let demoJSON = document.getElementById("results");
 
+  let searchButton = document.getElementById("searchButton");
   // get an api key from http://open-platform.theguardian.com/access/
   let baseURL = "https://content.guardianapis.com/search?api-key=317c6d50-efc8-4a5d-a28d-ce37f5f37e87&q=motoGP&show-fields=thumbnail&page-size=3";
 
-  searchForm.addEventListener("submit", function(ev){
-    let url = baseURL + queryBox.value;
-    let request = new Request(url);
+  searchButton.addEventListener("click", function(){
+    // let url = baseURL + queryBox.value;
+    let request = new Request(baseURL);
     fetch(request)
       .then(function (response) {
         // console.log(`response: ${response.status}`);
@@ -33,8 +34,8 @@
         }
         demoJSON.innerHTML = theData;
       });
-	  queryBox.value = "";
-    ev.preventDefault();
+	  // queryBox.value = "";
+    // ev.preventDefault();
   }, false);
 
 }());
