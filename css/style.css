@@ -431,30 +431,41 @@ footer{
 
 .team-container h1{
   text-align: center;
+  padding-bottom: 20px;
 }
 
 .team{
-  border: 1px solid red;
   height: 200px;
-  width: 100%;
   text-align: center;
 }
 
 /*all of the teams*/
 #ducati{
-
+  background-image: url("../img/duacti.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #yamaha{
-
+  background-image: url("../img/yamaha.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #honda{
-
+  background-image: url("../img/honda.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #suzuki{
-
+  background-image: url("../img/suzuki.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 
@@ -666,6 +677,14 @@ footer{
 
   .footer{
     height: 300px;
+  }
+
+  /*styling for the riders page*/
+  .team{
+    border: 1px solid red;
+    height: 350px;
+    width: 100%;
+    text-align: center;
   }
 
 }
