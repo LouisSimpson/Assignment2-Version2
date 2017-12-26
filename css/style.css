@@ -339,7 +339,7 @@ footer{
 }
 
 .rider-container{
-  height: 500px;
+  height: 750px;
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -350,7 +350,7 @@ footer{
   content: "";
   z-index: -1;
   position: absolute;
-  height: 500px;
+  height: 750px;
   width: 100%;
   background-image: url("../img/bike5.jpg");
   background-position: left;
@@ -422,6 +422,41 @@ footer{
   color: #fff;
   text-shadow: 2px 2px 4px black;
 }
+
+/*styling for the teams page*/
+.team-container{
+  border: 1px solid red;
+  width: 100%;
+}
+
+.team-container h1{
+  text-align: center;
+}
+
+.team{
+  border: 1px solid red;
+  height: 200px;
+  width: 100%;
+  text-align: center;
+}
+
+/*all of the teams*/
+#ducati{
+
+}
+
+#yamaha{
+
+}
+
+#honda{
+
+}
+
+#suzuki{
+
+}
+
 
 
 
@@ -605,6 +640,18 @@ footer{
     float: left;
   }
 
+  /*styling for rider page*/
+  .rider-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid red;
+    height: 500px;
+    width: 100%;
+    margin: auto;
+  }
+
   /*make the video responsive for tablet view*/
   .vid{
     height: 600px;
@@ -623,8 +670,7 @@ footer{
 
 }
 
-/*STYLING FOR LARGER TABLETS*/
-@media only screen and (min-width: 620px){
+
 
 /*STYLING FOR DESKTOPS & LAPTOPS*/
 @media only screen and (min-width: 1024px){
