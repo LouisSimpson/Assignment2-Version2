@@ -4,7 +4,7 @@
 
   let queryBox = document.getElementById("flickrQuery");
   let searchForm = document.getElementById("searchForm");
-  let resultsJSON = document.getElementById("results");
+  let resultsJSON = document.getElementById("imgresults");
 
   let baseURL = "https://api.flickr.com/services/rest/? \
                 method=flickr.photos.search& \

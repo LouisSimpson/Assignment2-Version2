@@ -185,14 +185,10 @@ main h1{
   padding-bottom: 20px;
 }
 
-
-
 .slides{
   margin: auto;
   height: 200px;
   width: auto;
-  border: 1px solid black;
-  border-radius: 5px;
 }
 
 .fade {
@@ -328,9 +324,8 @@ main h1{
 
 /*styling for video section*/
 .vid{
-  height: 300px;
+  height: auto;
   background: black;
-  border-bottom: 5px solid black;
 }
 
 .vid video{
@@ -341,6 +336,7 @@ main h1{
 
 /*styling for the footer*/
 footer{
+  width: 100%;
   height: auto;
   text-align: center;
   background-color: black;
@@ -697,9 +693,23 @@ footer{
     margin: auto;
   }
 
+  .right-content h3{
+    font-size: 1em;
+  }
+
   /*hide this class which is styled for mobile view only*/
   .twitter{
     display: none;
+  }
+
+  /*styling for the gallery*/
+  #imgresults{
+    padding-bottom: 50px;
+  }
+
+  #imgresults img{
+    padding-bottom: 10px;
+    padding-right: 5px;
   }
 
   /*styling for guardian search results*/
@@ -782,10 +792,15 @@ footer{
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    border: 1px solid red;
-    height: 500px;
-    width: 100%;
+    height: 600px;
+    width: 70%;
     margin: auto;
+    padding-bottom: 20px;
+  }
+
+  .rider-container::before{
+    height: 600px;
+    width: 70%;
   }
 
   /*styling for the team page*/
@@ -797,7 +812,7 @@ footer{
 
   /*make the video responsive for tablet view*/
   .vid{
-    height: 600px;
+    height: auto;
     border-bottom: 0;
   }
 
@@ -817,12 +832,97 @@ footer{
     width: 100%;
     text-align: center;
   }
+
+  /*styling for gallery*/
+  .slides{
+    height: 300px;
+  }
 }
 
 
 
 /*STYLING FOR DESKTOPS & LAPTOPS*/
 @media only screen and (min-width: 1024px){
+  header{
+    height: 140px;
+
+  }
+
+  #motogpimg{
+    height: 120px;
+  }
+
+  /*styling for the navigation bar*/
+  nav{
+    display: inline-block;
+  }
+
+  .social-nav{
+    display: none;
+  }
+
+  .page-nav{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: black;
+    border-bottom: 0px;
+    padding-right: 20px;
+  }
+
+  .page-nav li{
+    border-top: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 0;
+    padding-bottom: 0;
+    align-items: center;
+    height: auto;
+    color: black;
+    font-size: 1.5em;
+  }
+
+  .page-nav li a{
+    color: black;
+  }
+
+  nav ul a:visited{
+    color: black;
+  }
+
+  .active{
+	color: #86c232;
+	border-bottom: 1px solid red;
+  }
+
+  #nav-menu{
+    background: none;
+    border-bottom: 0px;
+    height: 100px;
+    width: auto;
+    font-weight: 100;
+    position: inherit;
+    opacity: 1;
+  }
+
+  #menu{
+    display: none;
+  }
+
+  #nav-menu h3{
+    display: none;
+  }
+
+  /*hide the close button*/
+  #close{
+    display: none;
+  }
+
+  nav ul li{
+    display: inline-block;
+  }
+
   /*styling for banner on index page*/
   .banner{
     height: 500px;
@@ -831,6 +931,14 @@ footer{
   /*styling for the footer*/
   .footer{
     height: auto;
+  }
+
+  .footnav ul li{
+    display: block;
+  }
+
+  .footnav ul li a{
+    color: #fff;
   }
 
   /*do not display the video on desktop view*/
@@ -843,11 +951,33 @@ footer{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding-bottom: 20px;
   }
 
   .team{
     height: 400px;
     width: 50%;
     margin: auto;
+  }
+
+  /*styling for rider page*/
+  .rider-container{
+    height: 600px;
+    width: 40%;
+    margin: auto;
+  }
+
+  .rider-container::before{
+    height: 600px;
+    width: 40%;
+  }
+
+  /*styling for gallery*/
+  .slides{
+    height: 500px;
+  }
+
+  .gallery-container{
+    padding-bottom: 50px;
   }
 }
