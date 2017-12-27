@@ -426,7 +426,6 @@ footer{
 
 /*styling for the teams page*/
 .team-container{
-  border: 1px solid red;
   width: 100%;
 }
 
@@ -492,10 +491,10 @@ footer{
   background-color: #fefefe;
   color: black;
   margin: auto;
-  padding: 20px;
-  border: 1px solid red;
+  padding: 30px;
   width: 60%;
   height: 200px;
+  border-radius: 5px;
 }
 
 .modal-content button{
