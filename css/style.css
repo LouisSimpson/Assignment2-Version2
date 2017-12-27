@@ -54,6 +54,7 @@ nav ul a li{
 
 main h1{
   text-align: center;
+  padding-bottom: 10px;
 }
 
 #close{
@@ -138,15 +139,53 @@ main h1{
 
 /*styling for the gallery slideshow*/
 .gallery-container{
-  height: 600px;
+  height: auto;
   width: 100%;
-  border: 1px solid red;
   text-align: center;
 }
 
 .gallery-container h2{
   padding-bottom: 20px;
 }
+
+.gallery-container form{
+  padding-bottom: 20px;
+}
+
+.gallery-container form label{
+  font-weight: bold;
+}
+
+#flickrQuery{
+  width: 130px;
+}
+
+#submitbtn{
+  background-color: #404040;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  width: 60px;
+  text-align: center;
+  color: #fff;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  font-size: 1em;
+}
+
+#submitbtn:hover{
+  background:#fff;
+  box-shadow:0px 2px 10px 5px red;
+  color:#000;
+}
+
+#results{
+  padding-bottom: 20px;
+}
+
+
 
 .slides{
   margin: auto;
@@ -169,6 +208,7 @@ main h1{
 /*styling for article box on gallery page*/
 .slide-show{
   width: 100%;
+  padding-bottom: 20px;
 }
 
 .text-box{
