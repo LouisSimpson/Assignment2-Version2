@@ -52,6 +52,10 @@ nav ul a li{
   padding-top: 15px;
 }
 
+main h1{
+  text-align: center;
+}
+
 #close{
   width: 20px;
   position: relative;
@@ -133,9 +137,23 @@ nav ul a li{
 
 
 /*styling for the gallery slideshow*/
+.gallery-container{
+  height: 600px;
+  width: 100%;
+  border: 1px solid red;
+  text-align: center;
+}
+
+.gallery-container h2{
+  padding-bottom: 20px;
+}
+
 .slides{
+  margin: auto;
   height: 200px;
   width: auto;
+  border: 1px solid black;
+  border-radius: 5px;
 }
 
 .fade {
@@ -332,12 +350,6 @@ footer{
 
 
 /*styling for the animation on riders page*/
-#riderstitle{
-  text-align: center;
-  height: 50px;
-  padding-top: 15px;
-}
-
 .rider-container{
   height: 750px;
   width: 100%;
@@ -576,10 +588,7 @@ footer{
   }
 
   .main-section{
-    margin-top: 0;
-    border: 1px solid red;
-    width: 100%;
-    height: 300px;
+    display: none;
   }
 
   .banner{
@@ -641,6 +650,11 @@ footer{
     overflow: hidden;
     text-align: center;
     padding-top: 20px;
+  }
+
+  .right-content button{
+    display: block;
+    margin: auto;
   }
 
   /*hide this class which is styled for mobile view only*/
@@ -759,17 +773,41 @@ footer{
 
   /*styling for the riders page*/
   .team{
-    border: 1px solid red;
     height: 350px;
     width: 100%;
     text-align: center;
   }
-
 }
 
 
 
 /*STYLING FOR DESKTOPS & LAPTOPS*/
 @media only screen and (min-width: 1024px){
+  /*styling for banner on index page*/
+  .banner{
+    height: 500px;
+  }
 
+  /*styling for the footer*/
+  .footer{
+    height: auto;
+  }
+
+  /*do not display the video on desktop view*/
+  .vid{
+    display: none;
+  }
+
+  /*styling for team page*/
+  .team-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .team{
+    height: 400px;
+    width: 50%;
+    margin: auto;
+  }
 }
