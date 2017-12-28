@@ -51,7 +51,7 @@ nav ul a{
 }
 
 nav ul a:hover{
-  font-style: italic;
+  color: #ac0e35;
 }
 
 nav ul a li{
@@ -1108,7 +1108,7 @@ footer{
   }
 
   .active{
-    font-weight: bold;
+    font-weight: normal;
     color: #ac0e35;
     text-decoration: underline;
   }
