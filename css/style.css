@@ -201,6 +201,7 @@ main h1{
   margin: auto;
   height: 200px;
   width: auto;
+  border: 5px solid #fff;
 }
 
 .fade {
@@ -1231,6 +1232,7 @@ footer{
 
   /*styling for gallery*/
   .slides{
+    border: 10px solid #fff;
     height: 500px;
   }
 
