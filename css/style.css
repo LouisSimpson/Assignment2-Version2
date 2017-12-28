@@ -87,7 +87,7 @@ main h1{
   z-index: 99;
   opacity: 0.9;
   width: 40%;
-  height: 700px;
+  height: 100%;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
@@ -350,6 +350,7 @@ footer{
   color: #fff;
   height: 150px;
   padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .socialmedia{
@@ -1076,6 +1077,7 @@ footer{
 
   /*styling for rider page*/
   .rider-container{
+    flex-direction: column;
     height: 800px;
     width: 60%;
     margin: auto;
@@ -1084,6 +1086,21 @@ footer{
   .rider-container::before{
     height: 800px;
     width: 60%;
+  }
+
+  /*take away the flip effect for desktop view and display the info next to the img*/
+  .front, .back {
+  	backface-visibility: visible;
+  }
+
+  .flip-container:hover .flipper, .flip-container.hover .flipper {
+  	transform: rotateY(0deg);
+  }
+
+  /*info before displayed behind img so added margin to make it visible*/
+  .back{
+    transform: rotateY(0deg);
+    margin-left: 110%;
   }
 
   /*styling for gallery*/
