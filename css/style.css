@@ -618,6 +618,8 @@ footer{
   padding: 5px;
   height: 150px;
   width: 90%;
+  padding-bottom: 20px;
+  border-radius: 4px;
 }
 
 .dateholder h2{
@@ -959,6 +961,29 @@ footer{
     height: 300px;
   }
 
+  /*styling for circuits page*/
+  .circuit h2{
+    height: 70px;
+  }
+
+  .circuit{
+    height: 320px;
+    width: 90%;
+  }
+
+  .circuit img{
+    height: 250px;
+    width: auto;
+  }
+
+  .head{
+    height: 70px;
+  }
+
+  .head img{
+    height: 70px;
+  }
+
 
 /*STYLING FOR DESKTOPS & LAPTOPS*/
 @media only screen and (min-width: 1024px){
@@ -1214,5 +1239,32 @@ footer{
 
   #suzuki{
     background-position: top;
+  }
+
+  /*styling for circuits page*/
+  .circuitcontainer{
+    justify-content: space-around;
+  }
+
+  .circuit h2{
+    height: 70px;
+  }
+
+  .circuit{
+    height: 350px;
+    width: 40%;
+  }
+
+  .circuit img{
+    height: 280px;
+    width: auto;
+  }
+
+  .head{
+    height: 70px;
+  }
+
+  .head img{
+    height: 70px;
   }
 }
