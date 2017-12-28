@@ -13,12 +13,22 @@ body{
 
 /*main header*/
 header{
+  background: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 100px;
   padding-left: 5px;
   padding-right: 5px;
+}
+
+.topbar{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 18px;
+  width: 100%;
+  background: #221f1a;
 }
 
 header a{
@@ -55,6 +65,7 @@ nav ul a li{
 main h1{
   text-align: center;
   padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 #close{
@@ -112,9 +123,10 @@ main h1{
 }
 
 #motogpimg{
-  height: 70px;
+  height: 30px;
   width: auto;
   padding-top: 5px;
+  padding-left: 5px;
 }
 
 #menu{
@@ -127,12 +139,11 @@ main h1{
 
 /*banner*/
 .banner{
-  height: 220px;
+  height: 230px;
   width: auto;
-  background-image: url("../img/motobanner.jpg");
+  background-image: url("../img/background1.jpg");
   background-position: center;
   background-size: cover;
-  border-top: 1px solid black;
 }
 
 
@@ -400,8 +411,8 @@ footer{
   position: absolute;
   height: 750px;
   width: 100%;
-  background-image: url("../img/bike5.jpg");
-  background-position: left;
+  background-image: url("../img/background2.jpg");
+  background-position: center;;
   background-size: cover;
   background-repeat: no-repeat;
   opacity: .4;
@@ -628,7 +639,6 @@ footer{
   }
 
   .banner{
-    background-position: top;
     height: 350px;
   }
 
@@ -655,6 +665,7 @@ footer{
     height: 500px;
     width: 100%;
     padding-bottom: 10px;
+    padding-top: 10px;
     z-index: 1;
   }
   /*opacity applies to the container and all content so have to use pseudo before*/
@@ -662,13 +673,13 @@ footer{
     content: "";
     z-index: -1;
     position: absolute;
+    background-image: url("../img/background2.jpg");
     height: 500px;
     width: 100%;
-    background-image: url("../img/bike2.jpg");
-    background-position: center;
+    background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
-    opacity: .4;
+    opacity: .1;
   }
 
   .left-content{
@@ -849,7 +860,7 @@ footer{
   }
 
   #motogpimg{
-    height: 120px;
+    height: 50px;
   }
 
   /*styling for the navigation bar*/
@@ -892,8 +903,8 @@ footer{
   }
 
   .active{
-	color: #86c232;
-	border-bottom: 1px solid red;
+    font-weight: bold;
+    text-decoration: underline;
   }
 
   #nav-menu{
@@ -926,6 +937,7 @@ footer{
   /*styling for banner on index page*/
   .banner{
     height: 500px;
+    border-top: 0px;
   }
 
   /*styling for the footer*/
@@ -939,6 +951,10 @@ footer{
 
   .footnav ul li a{
     color: #fff;
+  }
+
+  .socialmedia{
+    width: 25%;
   }
 
   /*do not display the video on desktop view*/
@@ -962,14 +978,14 @@ footer{
 
   /*styling for rider page*/
   .rider-container{
-    height: 600px;
-    width: 40%;
+    height: 800px;
+    width: 60%;
     margin: auto;
   }
 
   .rider-container::before{
-    height: 600px;
-    width: 40%;
+    height: 800px;
+    width: 60%;
   }
 
   /*styling for gallery*/
