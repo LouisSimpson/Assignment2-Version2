@@ -916,13 +916,14 @@ footer{
 
   #motogpimg{
     height: 50px;
-    padding-left: 20px;
+    padding-left: 30px;
     padding-top: 20px;
   }
 
   /*styling for the navigation bar*/
   nav{
     display: inline-block;
+    padding-top: 20px;
   }
 
   nav ul a{
@@ -936,7 +937,7 @@ footer{
     left: 0;
     height: 20px;
     padding-top: 0;
-    padding-left: 20px;
+    padding-left: 30px;
   }
 
   .social-nav img{
@@ -949,6 +950,30 @@ footer{
 
   .social-nav li a:hover{
 
+  }
+
+  #instagram:hover{
+    content: url("../img/instagram2.svg");
+    height: 16px;
+    width: auto;
+  }
+
+  #twitter:hover{
+    content: url("../img/twitter2.svg");
+    height: 16px;
+    width: auto;
+  }
+
+  #facebook:hover{
+    content: url("../img/facebook2.svg");
+    height: 16px;
+    width: auto;
+  }
+
+  #youtube:hover{
+    content: url("../img/youtube2.svg");
+    height: 16px;
+    width: auto;
   }
 
   .page-nav{
