@@ -29,6 +29,7 @@ header{
   height: 14px;
   width: 100%;
   background: #221f1a;
+  border-bottom: 2px solid #646464;
 }
 
 header a{
@@ -698,7 +699,6 @@ footer{
     text-shadow: 2px 2px 4px #000000;
   }
 
-
   /*middle section with 2 columns*/
   .two-col{
     display: flex;
@@ -1039,6 +1039,11 @@ footer{
     border-top: 0px;
   }
 
+  main h1{
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+
   /*styling for the footer*/
   .footer{
     height: auto;
@@ -1070,7 +1075,7 @@ footer{
   }
 
   .team{
-    height: 400px;
+    height: 430px;
     width: 50%;
     margin: auto;
   }
@@ -1137,5 +1142,22 @@ footer{
 
   .modal-content{
     width: 30%;
+  }
+
+  /*all of the teams*/
+  #ducati{
+    background-position: top;
+  }
+
+  #yamaha{
+    background-position: top;
+  }
+
+  #honda{
+    background-position: top;
+  }
+
+  #suzuki{
+    background-position: top;
   }
 }
