@@ -26,7 +26,7 @@ header{
   position: absolute;
   top: 0;
   left: 0;
-  height: 18px;
+  height: 14px;
   width: 100%;
   background: #221f1a;
 }
@@ -49,10 +49,6 @@ nav ul a{
   color: #fff;
 }
 
-nav ul a:visited{
-  color: #fff;
-}
-
 nav ul a:hover{
   font-style: italic;
 }
@@ -66,6 +62,8 @@ main h1{
   text-align: center;
   padding-bottom: 10px;
   padding-top: 10px;
+  color: #ac0e35;
+  text-shadow: 1px 1px 1px black;
 }
 
 #close{
@@ -145,8 +143,6 @@ main h1{
   background-position: center;
   background-size: cover;
 }
-
-
 
 /*styling for the gallery slideshow*/
 .gallery-container{
@@ -415,7 +411,7 @@ footer{
   background-position: center;;
   background-size: cover;
   background-repeat: no-repeat;
-  opacity: .4;
+  opacity: .1;
 }
 /* entire container, keeps perspective */
 .flip-container {
@@ -601,6 +597,47 @@ footer{
   color:#000;
 }
 
+/*styling for the calendar page*/
+.calendar{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  padding-bottom: 10px;
+}
+
+.dateholder{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: #fff;
+  margin-top: 20px;
+  padding: 5px;
+  height: 150px;
+  width: 90%;
+}
+
+.dateholder h2{
+  display: flex;
+  width: 30%;
+  height: 40px;
+  color: #7c7c7c;
+  align-items: center;
+}
+
+.dateholder h3{
+  display: flex;
+  width: 65%;
+  height: 40px;
+  align-items: center;
+}
+
+.dateholder img{
+  height: 110px;
+  width: auto;
+  margin: auto;
+}
 /*back to top button*/
 .back-to-top {
   position: fixed;
@@ -624,6 +661,9 @@ footer{
 
 /*STYLING FOR TABLETS*/
 @media only screen and (min-width: 620px){
+  .topbar{
+    height: 18px;
+  }
 
   /*index page*/
   .main-section figure{
@@ -821,6 +861,18 @@ footer{
       width: 150px;
   }
 
+  /*styling for the calandar page*/
+  .dateholder{
+    padding-left: 0px;
+    height: 200px;
+    width: 45%;
+    overflow: hidden;
+  }
+
+  .dateholder img{
+    height: 120px;
+  }
+
   /*make the video responsive for tablet view*/
   .vid{
     height: auto;
@@ -856,7 +908,10 @@ footer{
 @media only screen and (min-width: 1024px){
   header{
     height: 140px;
+  }
 
+  .topbar{
+    height: 20px;
   }
 
   #motogpimg{
@@ -866,6 +921,10 @@ footer{
   /*styling for the navigation bar*/
   nav{
     display: inline-block;
+  }
+
+  nav ul a{
+    color: black;
   }
 
   .social-nav{
@@ -894,16 +953,9 @@ footer{
     font-size: 1.5em;
   }
 
-  .page-nav li a{
-    color: black;
-  }
-
-  nav ul a:visited{
-    color: black;
-  }
-
   .active{
     font-weight: bold;
+    color: #ac0e35;
     text-decoration: underline;
   }
 
@@ -915,6 +967,7 @@ footer{
     font-weight: 100;
     position: inherit;
     opacity: 1;
+    color: black;
   }
 
   #menu{
@@ -995,5 +1048,32 @@ footer{
 
   .gallery-container{
     padding-bottom: 50px;
+  }
+
+  /*styling for the calandar page*/
+  .dateholder{
+    padding-left: 0px;
+    height: 220px;
+    width: 45%;
+    overflow: hidden;
+    padding-bottom: 40px;
+  }
+
+  .dateholder img{
+    height: 190px;
+  }
+
+  .dateholder h2{
+    padding-left: 10px;
+  }
+
+
+  /*styling for the modal on team page*/
+  .modal{
+    padding-top: 120px;
+  }
+
+  .modal-content{
+    width: 30%;
   }
 }
