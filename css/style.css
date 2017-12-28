@@ -659,6 +659,63 @@ footer{
   cursor: pointer;
 }
 
+/*styling for circuits page*/
+.circuitcontainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.circuit h2{
+  display: flex;
+  align-items: center;
+  font-weight: normal;
+  height: 50px;
+  padding-left: 10px;
+}
+
+.circuit{
+  background: #fff;
+  margin-top: 10px;
+  height: 250px;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.circuit img{
+  height: 190px;
+  width: auto;
+}
+
+.head{
+  background: #b7b7b7;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  height: 50px;
+  padding-left: 10px;
+  border-bottom: 2px solid #646464;
+}
+
+.head img{
+  height: 50px;
+  width: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*STYLING FOR TABLETS*/
@@ -901,8 +958,6 @@ footer{
   .slides{
     height: 300px;
   }
-}
-
 
 
 /*STYLING FOR DESKTOPS & LAPTOPS*/
