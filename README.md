@@ -1,9 +1,11 @@
 ## MotoGP Website
+
 By Reuben Porter P15221160
 
 
 ### Module Information
- - CTEC3905 Frontend Development
+
+CTEC3905 Frontend Development
 
 ---
 ## Contents:
@@ -13,7 +15,7 @@ By Reuben Porter P15221160
 3. Mobile first responsive design
 4. HTML5 semantic elements
 5. Advanced CSS3 styling
-6. JavaScript useage
+6. JavaScript usage
 7. API & JSON
 8. Evidence of user testing
 9. Website usability
