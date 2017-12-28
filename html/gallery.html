@@ -41,29 +41,30 @@
 
 	<main>
 		<h1>The Gallery</h1>
+		<!--container for the gallery-->
 		<div class="gallery-container">
 			<section class="slide-show">
 				<article>
-					<img class="slides fade" src="../img/bike2.jpg">
-					<img class="slides fade" src="../img/motobanner.jpg">
-					<img class="slides fade" src="../img/bike3.jpg">
-					<img class="slides fade" src="../img/rossicorner.jpg">
-					<img class="slides fade" src="../img/bike6.jpg">
+					<img class="slides fade" src="../img/bike2.jpg" alt="bike">
+					<img class="slides fade" src="../img/motobanner.jpg" alt="bike">
+					<img class="slides fade" src="../img/bike3.jpg" alt="bike">
+					<img class="slides fade" src="../img/rossicorner.jpg" alt="bike">
+					<img class="slides fade" src="../img/bike6.jpg" alt="bike">
 				</article>
 			</section>
-
+			<!--search form for the api query-->
 			<form id="searchForm">
 		    <label for="flickrQuery">Image Search: </label>
 		    <input id="flickrQuery" type="text" placeholder="MotoGP">
 		    <input id="submitbtn" type="submit">
 		  </form>
-
+			<!--display the results from the api query-->
 		  <section id="imgresults"></section>
 		</div>
-
+	</main>
 	<!--back to top button-->
 	<div class="back-to-top">
-		<img src="../img/totop.svg" />
+		<img src="../img/totop.svg" alt="backtotop"/>
 	</div>
 
 	<!--Javascript here-->
