@@ -727,19 +727,6 @@ footer{
   width: auto;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*STYLING FOR TABLETS*/
 @media only screen and (min-width: 620px){
   .topbar{
@@ -1015,7 +1002,6 @@ footer{
   .head img{
     height: 70px;
   }
-
 
 /*STYLING FOR DESKTOPS & LAPTOPS*/
 @media only screen and (min-width: 1024px){
