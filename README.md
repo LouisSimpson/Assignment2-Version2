@@ -22,8 +22,8 @@ CTEC3905 Frontend Development
 10. Validation
 11. The use of GitHub
 12. Personal development
-12. Entire reference list
 
+*References can be found throughout this document*
 
 ---
 ## 1. Choice of website
@@ -49,9 +49,15 @@ The following sketches are intial designs of the index page and general layout o
 
 #### Mobile view
 
+<img src="https://i.imgur.com/5cGlozj.jpg" width="500px" alt="mobile">
+
 #### Tablet view
 
+<img src="https://i.imgur.com/fcOreVE.jpg" width="500px" alt="tablet">
+
 #### Desktop view
+
+<img src="https://i.imgur.com/8m8pCnH.jpg" width="500px" alt="desktop">
 
 resources used: https://designshack.net/articles/layouts/10-rock-solid-website-layout-examples/ 
 
@@ -152,7 +158,9 @@ I have tried to include as much raw JavaScript as possible based on what we were
 
 I have used a minimal amount of jQuery for a script that closes the nav menu once opened.
 
-Resources used: https://www.w3schools.com/howto/howto_css_modals.asp
+Resources used:
+- https://www.w3schools.com/howto/howto_css_modals.asp
+- https://www.w3schools.com/howto/howto_js_lightbox.asp
 
 ---
 ## 7. API & JSON
@@ -203,7 +211,27 @@ Evidence can be found below:
 ---
 ## 9. Website usability
 
+### Intelligent application of Information Architecture and PARC
 
+I have applied information architecture and PARC as we were taught by Dave & Fania during lectures and labs.
+
+Resources used: http://www.uxbooth.com/articles/complete-beginners-guide-to-information-architecture/
+
+### Awareness of accessibility principles
+
+I understand the problems of accessibility and realise the importance of it. From this understanding I have tried to make my website as easy to use for my intended audience as possible.
+
+### Effective navigation at all sizes, content easy to locate
+
+- Navigation is a *side menu* which is opened from a *hamburger* icon for **mobile** & **tablet** views - this is the most common method used nowadays for navigation on these devices.
+- Navigation is a standard *horizontal navigation bar* located at the top of the webpage for **laptop** & **desktop** views.
+- All content is displayed in a sensible, professional layout making it easy to locate.
+
+### Sitemap
+
+I have included a sitemap in the footer of my website for ease of navigation as shown in the screenshot below:
+
+<img src="https://i.imgur.com/TCFGnwl.png" width="800px" alt="sitemap">
 
 ---
 ## 10. Validation
@@ -216,7 +244,7 @@ The screenshots below show evidence of using the validator:
 
 #### With Errors
 
-This was the worse page with a total of 43 errors. (I have obviously forgot to check this page during development)
+This was the worse page with a total of 43 errors. (I had obviously forgot to check this page during development)
 
 <img src="https://i.imgur.com/Z8QsTFP.png" width="600px" alt="with errors">
 
@@ -226,7 +254,7 @@ This was the worse page with a total of 43 errors. (I have obviously forgot to c
 
 #### Warnings
 
-After I had made all possible changes some warnings were still displayed. These were mainly ```<h1><h2><h3><h4>``` required at the start of an article or section. In these particular cases a heading wasn't required therefore I did not add one, resulting in a warning.  
+After I had made all possible changes some warnings were still displayed. These were mainly due to a ```<h1><h2><h3><h4>``` required at the start of an article or section. In these particular cases a heading wasn't required therefore I did not add one, resulting in a warning.  
 
 ### Console Errors
 
@@ -257,7 +285,7 @@ I was already familiar with the use of Github and GitBash from a previous module
 
 ### Using branches
 
-I used branches for when I wanted to experiement with my website within affecting the master version. Once I had fixed any errors from the changes made within that branch, I merged it to the master and deleted it.
+I used branches for when I wanted to experiement with my website without affecting the master version. Once I had fixed any errors from the changes made within that branch, I merged it to the master and deleted it.
 
 The screenshot below displays the branch named *Safari* (I was testing browsing compatibility). It then shows the successful merge to the master branch and finally the branch having been deleted.
 
@@ -276,10 +304,15 @@ I have learnt a lot during this module and I'm happy to say that I will be able 
 - Writing in Markdown
 - Correct use of HTML5 semantic elements
 - More experience with GitHub
+- The use of emmit
 
----
-## 13. Entire reference list
+An example of me using emmit can be found below:
 
+#### This
+<img src="https://i.imgur.com/DtnhtxI.png" height="200px" alt="branchgithub">
 
+#### Becomes
+
+<img src="https://i.imgur.com/9TJAAti.png" height="200px" alt="branchgithub">
 
 ---
